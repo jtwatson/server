@@ -1,0 +1,48 @@
+name: Go
+on:
+  pull_request:
+    types: [opened, synchronize, reopen] # these are the defaults - synchronize means 'commits pushed to PR'
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Run tests and race detection
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.19
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.19
+        id: go
+
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Get dependencies
+        shell: bash
+        run: go get -v -t -d ./...
+
+      - name: Run tests with race detection
+        run: go test -v -race ./...
+
+      - name: Run build
+        run: go build
+
+  golangci:
+    name: Run golangci-lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          # Required: the version of golangci-lint is required and must be specified without patch version: we always use the latest patch version.
+          version: v1.50
+
+          # Optional: show only new issues if it's a pull request. The default value is `false`.
+          only-new-issues: true
