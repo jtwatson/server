@@ -117,7 +117,7 @@ linters:
     - stylecheck # Stylecheck is a replacement for golint [fast: false, auto-fix: false]
     - tagliatelle # Checks the struct tags. [fast: true, auto-fix: false]
     - tparallel # tparallel detects inappropriate usage of t.Parallel() method in your Go test codes [fast: false, auto-fix: false]
-    # - typecheck # Like the front-end of a Go compiler, parses and type-checks Go code [fast: false, auto-fix: false]
+    - typecheck # Like the front-end of a Go compiler, parses and type-checks Go code [fast: false, auto-fix: false]
     - unconvert # Remove unnecessary type conversions [fast: false, auto-fix: false]
     - unparam # Reports unused function parameters [fast: false, auto-fix: false]
     - unused # (megacheck): Checks Go code for unused constants, variables, functions and types [fast: false, auto-fix: false]
@@ -146,18 +146,6 @@ linters:
 issues:
   # Excluding configuration per-path, per-linter, per-text and per-source
   exclude-rules:
-    - path: _test\.go
-      linters:
-        - gomnd
-        - scopelint
-        - funlen
-        - gocyclo
-        - goconst
-        - nlreturn
-        - gochecknoglobals
-        - gochecknoinits
-        - lll
-
     - path: server_test\.go
       linters:
         - paralleltest
@@ -178,12 +166,3 @@ issues:
 
   # Maximum count of issues with the same text. Set to 0 to disable. Default is 3.
   max-same-issues: 0
-
-# golangci.com configuration
-# https://github.com/golangci/golangci/wiki/Configuration
-service:
-  golangci-lint-version: 1.43 # use the fixed version to not introduce new linters unexpectedly
-
-run:
-  skip-dirs:
-    - gui/node_modules
