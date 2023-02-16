@@ -54,8 +54,8 @@ func (s *Server) Start(handler http.Handler) error {
 	default:
 	}
 
-	ctxShutDown, cancel := context.WithTimeout(context.Background(), shutdownHammer)
-	defer cancel()
+	ctxShutDown, cancelShutDown := context.WithTimeout(context.Background(), shutdownHammer)
+	defer cancelShutDown()
 
 	if err := s.srv.Shutdown(ctxShutDown); err != nil {
 		return errors.Wrap(err, "http.Server.Shutdown(): didn't shutdown gracefully")
