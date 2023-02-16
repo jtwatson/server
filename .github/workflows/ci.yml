@@ -1,4 +1,4 @@
-name: Go
+name: CI
 on:
   pull_request:
     types: [opened, synchronize, reopen] # these are the defaults - synchronize means 'commits pushed to PR'
