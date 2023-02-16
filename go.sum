@@ -1,0 +1,9 @@
+github.com/go-playground/assert v1.2.1/go.mod h1:Lgy+k19nOB/wQG/fVSQ7rra5qYugmytMQqvQ2dgjWn8=
+github.com/go-playground/assert/v2 v2.0.1/go.mod h1:VDjEfimB/XKnb+ZQfWdccd7VUvScMdVu0Titje2rxJ4=
+github.com/go-playground/errors/v5 v5.2.3 h1:RPxaFHgJZjgk/OFkUcfytJgRQKRINLtueVxgOdnfPpg=
+github.com/go-playground/errors/v5 v5.2.3/go.mod h1:DincxRGwraWmq39TZDqtnOtHGOJ+AbNbO0OmBzX6MLw=
+github.com/go-playground/form/v4 v4.1.1/go.mod h1:q1a2BY+AQUUzhl6xA/6hBetay6dEIhMHjgvJiGo6K7U=
+github.com/go-playground/pkg/v5 v5.0.0 h1:cml7lI472g05ANLG0Or2B6dyeFrnkQazTDEWdJx9/x4=
+github.com/go-playground/pkg/v5 v5.0.0/go.mod h1:0380E0lsFB1POWFypOLL8tX2f0O1OBCBpSdVmEy4mg0=
+github.com/jtwatson/shutdown v0.1.1 h1:1kgFchOopPJJk5vDitJuQ4jxHdsKz5119N1nn5ZMsNs=
+github.com/jtwatson/shutdown v0.1.1/go.mod h1:X6GrzMnrtG80WnP9s3eEYDpwHefIq85nO1WNRevOJq8=
