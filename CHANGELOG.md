@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/jtwatson/server/compare/v0.2.0...v0.2.1) (2023-02-17)
+
+
+### Documentation
+
+* Add License ([#5](https://github.com/jtwatson/server/issues/5)) ([51d4ff7](https://github.com/jtwatson/server/commit/51d4ff7a16f6283f79d0a5a55fc1a724025f8a7c))
+
 ## [0.2.0](https://github.com/jtwatson/server/compare/v0.1.0...v0.2.0) (2023-02-17)
 
 
