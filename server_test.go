@@ -88,8 +88,9 @@ func TestServer_Start(t *testing.T) {
 			done := make(chan bool)
 			go func() {
 				defer close(done)
+				ctx := context.Background()
 
-				if err := s.Start(handler); (err != nil) != tt.wantErr {
+				if err := s.Start(ctx, handler); (err != nil) != tt.wantErr {
 					t.Errorf("Server.Start() error = %v, wantErr %v", err, tt.wantErr)
 				}
 				done <- true

@@ -29,9 +29,9 @@ func New(addr string) *Server {
 }
 
 // Start starts up an HTTP Server with appServer as its handler.
-func (s *Server) Start(handler http.Handler) error {
+func (s *Server) Start(ctx context.Context, handler http.Handler) error {
 	// Capture interrupts so we can handle them gracefully.
-	ctx, cancel := shutdown.CaptureInterrupts(context.Background())
+	ctx, cancel := shutdown.CaptureInterrupts(ctx)
 
 	log.Printf("Starting Server at %s", s.srv.Addr)
 	defer log.Print("Server Exited")
