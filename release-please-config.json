@@ -15,6 +15,7 @@
     { "type": "style", "section": "Styles", "hidden": true },
     { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
     { "type": "refactor", "section": "Code Refactoring" },
+    { "type": "cleanup", "section": "Code Cleanup" },
     { "type": "test", "section": "Tests", "hidden": true },
     { "type": "build", "section": "Build System", "hidden": true },
     { "type": "ci", "section": "Continuous Integration", "hidden": true },
