@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/jtwatson/server/compare/v0.2.1...v0.2.2) (2025-09-30)
+
+
+### Code Upgrade
+
+* Upgrade dependencies ([#9](https://github.com/jtwatson/server/issues/9)) ([d969067](https://github.com/jtwatson/server/commit/d96906746b499bdf6ef17b9760d261b81e591cce))
+
 ## [0.2.1](https://github.com/jtwatson/server/compare/v0.2.0...v0.2.1) (2023-02-17)
 
 
