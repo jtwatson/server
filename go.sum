@@ -1,9 +1,6 @@
-github.com/go-playground/assert v1.2.1/go.mod h1:Lgy+k19nOB/wQG/fVSQ7rra5qYugmytMQqvQ2dgjWn8=
-github.com/go-playground/assert/v2 v2.0.1/go.mod h1:VDjEfimB/XKnb+ZQfWdccd7VUvScMdVu0Titje2rxJ4=
-github.com/go-playground/errors/v5 v5.2.3 h1:RPxaFHgJZjgk/OFkUcfytJgRQKRINLtueVxgOdnfPpg=
-github.com/go-playground/errors/v5 v5.2.3/go.mod h1:DincxRGwraWmq39TZDqtnOtHGOJ+AbNbO0OmBzX6MLw=
-github.com/go-playground/form/v4 v4.1.1/go.mod h1:q1a2BY+AQUUzhl6xA/6hBetay6dEIhMHjgvJiGo6K7U=
-github.com/go-playground/pkg/v5 v5.0.0 h1:cml7lI472g05ANLG0Or2B6dyeFrnkQazTDEWdJx9/x4=
-github.com/go-playground/pkg/v5 v5.0.0/go.mod h1:0380E0lsFB1POWFypOLL8tX2f0O1OBCBpSdVmEy4mg0=
+github.com/go-playground/errors/v5 v5.4.0 h1:BxBxwlRjuclYbRebE4ddrRrMK705lS2mHzHw7BDoDPA=
+github.com/go-playground/errors/v5 v5.4.0/go.mod h1:6aVeVHsT36RNu/m/8AvGdPv8T2J/+KfVv6Su4VvBfpQ=
+github.com/go-playground/pkg/v5 v5.30.0 h1:ElTFBK1Pf3Jm0pRBi/AvgzbwBPAFzFsI2h4uH2xaEsY=
+github.com/go-playground/pkg/v5 v5.30.0/go.mod h1:UgHNntEQnMJSygw2O2RQ3LAB0tprx81K90c/pOKh7cU=
 github.com/jtwatson/shutdown v0.1.1 h1:1kgFchOopPJJk5vDitJuQ4jxHdsKz5119N1nn5ZMsNs=
 github.com/jtwatson/shutdown v0.1.1/go.mod h1:X6GrzMnrtG80WnP9s3eEYDpwHefIq85nO1WNRevOJq8=

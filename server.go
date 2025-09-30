@@ -1,4 +1,4 @@
-// server starts an HTTP Server to run the application
+// Package server starts an HTTP Server to run the application
 package server
 
 import (
@@ -33,7 +33,7 @@ func (s *Server) Start(ctx context.Context, handler http.Handler) error {
 	// Capture interrupts so we can handle them gracefully.
 	ctx, cancel := shutdown.CaptureInterrupts(ctx)
 
-	log.Printf("Starting Server at %s", s.srv.Addr)
+	log.Printf("Starting Server at http://%s", s.srv.Addr)
 	defer log.Print("Server Exited")
 
 	errChan := make(chan error, 1)

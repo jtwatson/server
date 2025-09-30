@@ -70,7 +70,7 @@ func TestServer_Start(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			var wg sync.WaitGroup
 			var handlerCalled atomic.Bool
-			handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			handler := http.HandlerFunc(func(_ http.ResponseWriter, _ *http.Request) {
 				wg.Done()
 				if handlerCalled.Load() {
 					time.Sleep(tt.args.responseDelay)
